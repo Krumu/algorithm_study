@@ -2,7 +2,7 @@
 #include <iostream>
 #include <array>
 
-const int arr_size = 8;
+constexpr int arr_size = 8;
 std::array <int, arr_size> arr = {31,24,32,123,32,12,53,64};
 void insertSort(std::array<int, arr_size> &arr);
 void printArray(const std::array<int, arr_size> &arr);
