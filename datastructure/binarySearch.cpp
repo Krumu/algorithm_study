@@ -1,7 +1,7 @@
 // binary search
 #include <iostream>
 #include <array>
-const int arr_size = 8;
+constexpr int arr_size = 8;
 std::array <int, arr_size> arr = {12, 24, 31, 32, 50, 53, 64, 123};
 int binarySearch(std::array<int, arr_size> arr, int target, int left, int right);
 int main(){
