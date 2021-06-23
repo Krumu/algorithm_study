@@ -31,6 +31,15 @@ class stack{
             top--;
             return arr[Idx]; 
         }
+
+        int peak(){
+            if(top < 0){
+                std::cout << "stack is empty";
+                return -99999;
+            }
+            return arr[top];
+        }
+
         void printStack(){
             for(int i=0;  i <= top; i++)
                 std::cout << arr[i] << ' ';
@@ -54,5 +63,6 @@ int main(){
     Stack1.printStack();
 
     std::cout << "value: " << val << std::endl;
+    std::cout << "top value: " << Stack1.peak() << std::endl;
     return 0;
 }
